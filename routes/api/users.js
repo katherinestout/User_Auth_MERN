@@ -75,12 +75,13 @@ User.findOne({email: req.body.email})
         });
 //hashing the password w/salt, set hashed password to password
 //making a password with salt and hash with bcrypt
-//save user
+//save user to the db
 bcrypt.genSalt(10, (err, salt) => {
     bcrypt.hash(newUser.password, salt, (err, hash) => {
         if(err) throw err;
         newUser.password = hash;
-        newUser.save().then(user => res.json(user)).catch(err => console.log(err));
+        newUser.save().then(user => 
+            res.json(user)).catch(err => console.log(err));
 
 
     });

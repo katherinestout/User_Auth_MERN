@@ -1,10 +1,10 @@
 {
   "name": "user_auth_mern",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,6 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
-  }
+  },
+  "description": ""
 }
