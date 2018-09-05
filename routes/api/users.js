@@ -35,7 +35,7 @@ User.findOne({email})
 const payload = { id: user.id, name: user.name }
 
            // res.json({msg: 'Sucess'});
-
+//
 //sign the token
 jwt.sign(payload, 
     keys.secretOrKey, 
